@@ -1,5 +1,5 @@
 # NMCDR
-This repository is the official code for the paper "**Neural Node Matching for Multi-Target Cross
+This repository is the official code for ICDE2023 paper "**Neural Node Matching for Multi-Target Cross
 Domain Recommendation**".  
 By **Wujiang Xu, Shaoshuai Li, Mingming Ha et al.**  
 ## Data Processing 
