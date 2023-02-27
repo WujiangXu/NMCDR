@@ -52,23 +52,20 @@ def select_overlap_user(train_name,save_train_name,save_train_d1_name,save_train
 
 overlap_ratio = 0.001
 
-# all_name = "music_movie_train.csv" # name change in next use
-# save_data_val = pd.read_csv(all_name)#.set_index(['user_id'],drop=False).sample(frac=1.0)#.reset_index(drop=True)
-# train_len = int(data.shape[0] * 0.80)
-# save_data_train = data.iloc[ : train_len]
-# save_data_val = data.iloc[ train_len: ]
-# data_d1 = (save_data_val.loc[save_data_val['domain_id']==0])
-# data_d2 = (save_data_val.loc[save_data_val['domain_id']==1])
-# data_d1.to_csv("music_movie_testD1.csv",index=False)
-# data_d2.to_csv("music_movie_testD2.csv",index=False)
+all_name = "music_movie_all.csv" # name change in next use
+data = pd.read_csv(all_name).set_index(['user_id'],drop=False).sample(frac=1.0)#.reset_index(drop=True)
+train_len = int(data.shape[0] * 0.80)
+save_data_train = data.iloc[ : train_len]
+save_data_val = data.iloc[ train_len: ]
+data_d1 = (save_data_val.loc[save_data_val['domain_id']==0])
+data_d2 = (save_data_val.loc[save_data_val['domain_id']==1])
+data_d1.to_csv("music_movie_testD1.csv",index=False)
+data_d2.to_csv("music_movie_testD2.csv",index=False)
 train_name = "music_movie_train.csv"
-# val_name = "music_movie_test.csv"
-# save_data_train.to_csv(train_name, index=False)
-# save_data_val.to_csv(val_name, index=False)
-#game video 90 refine
+val_name = "music_movie_test.csv"
+save_data_train.to_csv(train_name, index=False)
+save_data_val.to_csv(val_name, index=False)
 save_train_name = "music_movie_train"+str(int(overlap_ratio*100))+".csv"
-# save_val_name = "music_movie_test"+str(int(overlap_ratio*100))+".csv"
 save_train_d1_name = "music_movie_train"+str(int(overlap_ratio*100))+"D1.csv"
 save_train_d2_name = "music_movie_train"+str(int(overlap_ratio*100))+"D2.csv"
 select_overlap_user(train_name,save_train_name,save_train_d1_name,save_train_d2_name,overlap_ratio)
-# select_overlap_user(val_name,save_val_name,overlap_ratio)
