@@ -12,8 +12,7 @@ By **Wujiang Xu, Shaoshuai Li, Mingming Ha et al.**
 >python3 train_matching.py
 
 ## Future Work
-1. requirements.txt will be provided.
-2. More detailed parameters descirption.
+More detailed parameters descirption.
 
 ## Contact us 
 Please feel free to contact us with the email to W. Xu "xuwujiang.xwj@mybank.cn" or "swustimp@gmail.com".
