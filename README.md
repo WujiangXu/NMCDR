@@ -14,5 +14,19 @@ By **Wujiang Xu, Shaoshuai Li, Mingming Ha et al.**
 ## Future Work
 More detailed parameters descirption.
 
+## Citation
+
+If you found the codes are useful, please cite our paper.
+
+      @inproceedings{xu2023neural,
+      title = {Neural Node Matching for Multi-Target Cross Domain Recommendation},
+      author = {Wujiang Xu, Shaoshuai Li, Mingming Ha, Xiaobo Guo, Qiongxu Ma, Xiaolei Liu, Linxun Chen and Zhenfeng Zhu},
+      booktitle = {	The IEEE International Conference on Data Engineering 2023 (ICDE2023)},
+      year = {2023}
+      }
+
+
+
+
 ## Contact us 
 Please feel free to contact us with the email to W. Xu "xuwujiang.xwj@mybank.cn" or "swustimp@gmail.com".
